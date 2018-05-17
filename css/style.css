@@ -1,0 +1,97 @@
+li{
+    display: inline-block;
+    font-size: 30px;
+    margin: 0;
+    background: rgba(0,0,0,0.5);
+    width: 13vw;
+    text-align: center;
+    padding: 10px;
+    transition: 1s ease-in-out;
+}
+
+li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+li:nth-child(1):hover{
+    background: red;
+}
+
+li:nth-child(2):hover{
+    background: black;
+}
+
+li:nth-child(3):hover{
+    background: cyan;
+}
+
+li:nth-child(4):hover{
+    background: fuchsia;
+}
+
+li:nth-child(5):hover{
+    background: teal;
+}
+
+li:nth-child(6):hover{
+    background: yellowgreen;
+}
+
+blockquote::before{
+    content: '"'
+}
+
+blockquote::after{
+    content: '"'
+}
+
+article::first-letter{
+    font-size: 150%;
+}
+
+article{
+    background:gray;
+    padding: 1em;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 5%;
+    background: yellow;
+}
+
+article:first-child{
+    background: white;
+}
+
+
+
+article:nth-child(2n){
+    color: yellow;
+}
+
+article:last-child{
+    background: white;
+    color: black;
+}
+
+
+article:nth-child(4n+1){
+    grid-column:1/2  ; 
+}
+
+article:nth-child(4n+2){
+grid-column: 2/5;
+}
+
+article:nth-child(4n+3){
+    grid-column:   1/4;
+}
+
+article:nth-child(4n+4){
+    grid-column:4/5;
+}
